@@ -1,0 +1,484 @@
+/* COMMON RULES */
+
+body {
+  font-family: "Trip Sans Med", Arial;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  /*border: black solid 2px;*/
+  box-sizing: border-box;
+}
+
+/* Titles */
+h1 {
+  font-size: 54px;
+  letter-spacing: 1.1px;
+  line-height: 64px;
+  font-family: "Trip Sans VF", "Trip Sans Med", Arial;
+}
+h1 span {
+  color: #fe5d5d;
+}
+h2 {
+  font-family: "Trip Sans VF", "Trip Sans Med", Arial;
+  font-size: 32px;
+  letter-spacing: 0.6px;
+  line-height: 38.4px;
+}
+h2 span {
+  text-align: center;
+}
+h3 {
+  font-family: "Trip Sans VF", "Trip Sans Med", Arial;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+/* HEADER */
+header {
+  /* background-color: lightcoral; */
+  height: 60px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+}
+
+header img {
+  width: 188px;
+}
+
+header nav {
+  /* width: 400px;
+  height: 40px; */
+  /*background-color: lightgreen;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+header nav div {
+  margin-right: 20px;
+}
+
+header nav div i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+header button {
+  height: 38px;
+  width: 143px;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: inherit;
+}
+
+.header2 {
+  display: none;
+}
+/* MAIN */
+
+/* Navigation Menu */
+.navigation-menu {
+  /*border: green 4px solid;*/
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+/*.navigation-menu div i {
+  margin-right: 10px;
+  font-size: 20px;
+}*/
+.navigation-menu > div {
+  border: black 1px solid;
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.navigation-menu > div:not(:last-child) {
+  margin-right: 20px;
+}
+.navigation-menu2 {
+  display: none;
+}
+.navigation-menu3 {
+  display: none;
+}
+.navigation-menu .vols {
+  display: none;
+}
+/* Pictures */
+.pictures {
+  height: 430px;
+  /* background-color: red; */
+  display: flex;
+  cursor: pointer;
+}
+
+.col-1 {
+  height: 100%;
+  /* background-color: blue; */
+  flex: 1;
+  margin-right: 2px;
+}
+
+.col-2 {
+  height: 100%;
+  /* background-color: purple; */
+  width: 480px;
+}
+
+.col-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.col-2 img {
+  height: calc(50% - 1.5px);
+  width: 100%;
+  object-fit: cover;
+  /* display: inline-block; */
+}
+
+.col-2 img:first-child {
+  border-top-right-radius: 20px;
+}
+
+.col-2 img:last-child {
+  border-bottom-right-radius: 20px;
+}
+/*under*/
+
+.under {
+  height: 420px;
+  margin-top: 71px;
+  margin-bottom: 96px;
+  margin-left: 72px;
+  margin-right: 74px;
+  background-color: #fff;
+  display: flex;
+}
+.colone1 {
+  height: 330px;
+  width: 480px;
+  background-color: white;
+  flex: 1;
+  margin-right: 2px;
+  object-fit: cover;
+}
+
+.colone1 p {
+  font-family: "Georgia";
+  font-size: 20px;
+  line-height: 24px;
+  color: #474747;
+  margin-top: 30px;
+  margin-inline-end: 144px;
+}
+
+.colone2 {
+  height: 100%;
+
+  background-color: white;
+  width: 480px;
+  object-fit: cover;
+}
+.text {
+  width: 480px;
+  background-color: #fe5d5d;
+  font-size: 32px;
+  letter-spacing: 0.6px;
+  line-height: 38.4px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 234px;
+  padding: 23px;
+  margin-top: 6px;
+
+  box-sizing: border-box;
+}
+.text p {
+  font-family: "Georgia";
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.text button {
+  height: 53px;
+  width: 151px;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 21px;
+  font-family: inherit;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.image img {
+  height: 187px;
+  width: 480px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+/*conseil de voyage*/
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 72px;
+  margin-right: 74px;
+}
+.section h2 {
+  margin: 0 20px;
+}
+.section div {
+  border-top: black solid 2px;
+  flex: 1;
+}
+
+.navigation-section {
+  display: flex;
+  margin-bottom: 50px;
+  height: 75px;
+  margin-top: 93px;
+  margin-bottom: 96px;
+  margin-left: 72px;
+  margin-right: 74px;
+}
+.navigation-section > div {
+  border: grey 2px solid;
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-section > div:not(:last-child) {
+  margin-right: 20px;
+}
+.navigation-section span {
+  font-family: "Trip Sans VF", "Trip Sans Med", Arial;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 28px;
+  cursor: pointer;
+}
+.navigation-section img {
+  height: 80px;
+  width: 88px;
+}
+/*Immanquable à Paris*/
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 72px;
+  margin-right: 74px;
+}
+.title h2 {
+  margin: 0 20px;
+}
+.title div {
+  border-top: black solid 2px;
+  flex: 1;
+}
+
+.section2 > div:nth-child(2) {
+  order: red solid 2px;
+  height: 340px;
+  margin: 30px 0;
+  display: flex;
+}
+
+.section2 .texts {
+  /* background-color: lightgrey;*/
+  flex: 1;
+  height: 100%;
+  background-color: #fff;
+  /* padding-right: 20px;*/
+  box-sizing: border-box;
+  margin-left: 72px;
+  margin-right: -60px;
+}
+
+.section2 .texts p {
+  margin: 30px 0;
+  font-family: "Georgia";
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 21.6px;
+  color: #474747;
+}
+
+.section2 .carrousel {
+  /*background-color: lightcoral;*/
+  flex: 3;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  margin-left: 72px;
+  margin-right: 74px;
+}
+
+/*enlever la scollbar*/
+/*::-webkit-scrollbar {
+  height: 0;
+  width: O;
+}*/
+.section2 .column {
+  width: calc(100% / 3 - (40px / 3));
+  height: 100%;
+  /*background-color: cadetblue;
+  border: black 2px solid;*/
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.section2 .column:not(:last-child) {
+  margin-right: 20px;
+}
+
+.section2 .column img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.column p {
+  font-size: 14px;
+  line-height: 16.8px;
+  margin-top: 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.section2 .circle {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 .circle i {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.section2 .relative {
+  position: relative;
+}
+
+.section2 .circle:hover i {
+  color: #fe5d5d;
+  font-weight: 900;
+}
+/*Responsive*/
+
+@media (max-width: 1328px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .navigation-menu {
+    display: none;
+  }
+
+  .navigation-menu2 {
+    /*border: green 4px solid;*/
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  /*.navigation-menu div i {
+    margin-right: 10px;
+    font-size: 20px;
+  }*/
+  .navigation-menu2 > div {
+    border: black 1px solid;
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+  }
+
+  .navigation-menu2 > div:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .navigation-menu3 {
+    /* border: green 4px solid;*/
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  /*.navigation-menu div i {
+    margin-right: 10px;
+    font-size: 20px;
+  }*/
+  .navigation-menu3 > div {
+    border: black 1px solid;
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+  }
+
+  .navigation-menu3 > div:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .navigation-menu .vols {
+    display: inherit;
+  }
+}
+@media (max-width: 1024px) {
+  .header1 {
+    display: none;
+  }
+
+  .header2 {
+    display: inherit;
+  }
+}
